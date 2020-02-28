@@ -1,19 +1,20 @@
 import React from "react";
 import BackgroundSlider from "react-background-slider";
-import { Cta, StyledSection } from "./intro.css";
-import Phone from "../../images/phone-call.svg";
+import { Cta, Section, Heading2 } from "./intro.css";
+import Phone from "../../images/icons/phone-call.svg";
 
-import image1 from "../../images/Pavers1.jpg";
-import image2 from "../../images/Pavers2.jpg";
-import image3 from "../../images/Pavers3.jpg";
-import image4 from "../../images/Pavers4.jpg";
+import image1 from "../../images/bg/Pavers5.jpg";
+import image2 from "../../images/bg/Stamping3.jpg";
+import image3 from "../../images/bg/Sidewalk3.jpg";
+import image4 from "../../images/bg/Pavers6.jpg";
+import image5 from "../../images/bg/Sidewalk1.jpg";
 
 const Intro = () => (
   <>
     <div style={{ height: "50vh" }}>
-      <StyledSection>
+      <Section>
         <div>
-          <h2>Fully insured projects.</h2>
+          <Heading2>Fully insured projects.</Heading2>
           <p>Sidewalks, Curbing, Stone Walls, Pavers </p>{" "}
         </div>
         <Cta>
@@ -21,10 +22,10 @@ const Intro = () => (
             <Phone /> Call Now!
           </a>
         </Cta>
-      </StyledSection>
+      </Section>
     </div>
     <BackgroundSlider
-      images={[image1, image2, image3, image4]}
+      images={[image1, image2, image3, image4, image5]}
       duration={10}
       transition={2}
     />

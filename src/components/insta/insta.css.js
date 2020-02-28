@@ -12,7 +12,7 @@ export const Article = styled.article`
 `;
 
 export const Section = styled.section`
-  margin: 4rem 0;
+  margin: 2rem 0;
   color: #71525c;
   padding: 0.5rem;
   > a {

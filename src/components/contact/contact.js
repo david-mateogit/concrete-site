@@ -1,8 +1,8 @@
 import React from "react";
 import { Article, Section, TextBox, LinkStyled, Heading4 } from "./contact.css";
 import Banner from "../banner/banner";
-import Phone from "../../images/phone-call.svg";
-import Mail from "../../images/envelope.svg";
+import Phone from "../../images/icons/phone-call.svg";
+import Mail from "../../images/icons/envelope.svg";
 
 const Contact = () => (
   <Article>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledSection = styled.section`
+export const Section = styled.section`
   margin: 60% 0;
   padding: 2rem;
   background-color: rgba(0, 0, 0, 0.5);
@@ -8,6 +8,10 @@ export const StyledSection = styled.section`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  > div > p {
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
 `;
 
 export const Cta = styled.button`
@@ -36,4 +40,9 @@ export const Cta = styled.button`
       transform: scale(0.9);
     }
   }
+`;
+
+export const Heading2 = styled.h2`
+  font-size: 1.5rem;
+  font-weight: bold;
 `;
