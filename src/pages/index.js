@@ -1,7 +1,7 @@
 import React from "react";
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout/layout";
+import SEO from "../components/seo/seo";
 
 import Intro from "../components/intro/intro";
 import About from "../components/about/about";

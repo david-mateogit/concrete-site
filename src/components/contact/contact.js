@@ -19,12 +19,13 @@ const Contact = () => (
       </TextBox>
       <TextBox>
         <Heading4>Service Area:</Heading4>
-        Manchester, Norwich, Gales Ferry, Middletown, Groton, Storrs Mansfield,
-        Mystic, Coventry, Carolina, Central Village, Oakdale, Mansfield Depot,
-        Putnam, Danielson, Rogers, Kingston, Salem, Kenyon, Uncasville, Moodus,
-        Greene, Amston, Hanover, South Glastonbury, Mashantucket, Hebron,
-        Cobalt, Brooklyn, Hadlyme, North Franklin, Eastford, East Hampton, East
-        Lyme, Cromwell, Plainfield, Slocum, New London, Gilman, Moosup, Yantic,
+        Connecticut, Rhode Island, and Massachusetts including: Manchester,
+        Norwich, Gales Ferry, Middletown, Groton, Storrs Mansfield, Mystic,
+        Coventry, Carolina, Central Village, Oakdale, Mansfield Depot, Putnam,
+        Danielson, Rogers, Kingston, Salem, Kenyon, Uncasville, Moodus, Greene,
+        Amston, Hanover, South Glastonbury, Mashantucket, Hebron, Cobalt,
+        Brooklyn, Hadlyme, North Franklin, Eastford, East Hampton, East Lyme,
+        Cromwell, Plainfield, Slocum, New London, Gilman, Moosup, Yantic,
         Clinton, Charlestown, Wauregan, Clayville, Wyoming, Killingworth, Old
         Mystic, Hope, East Haddam, Montville, Sterling, Andover, Ivoryton, South
         Lyme, Pawcatuck, Waterford, Portland, Wakefield, Willimantic, Niantic,
