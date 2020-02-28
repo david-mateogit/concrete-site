@@ -1,0 +1,34 @@
+import React from "react";
+import Banner from "../banner/banner";
+import {
+  Article,
+  Section,
+  TextBox,
+  Heading4,
+  Heading5,
+} from "./testimonials.css";
+import { reviews } from "./reviewsdata";
+
+const Testimonials = () => (
+  <Article>
+    <Section>
+      <Banner title="Testimonials" />
+      {reviews.map(review => (
+        <TextBox>
+          <Heading4> {review.name} 🌟🌟🌟🌟🌟</Heading4>
+          <Heading5>{review.project}</Heading5>
+          <blockquote>“{review.review}”</blockquote>
+        </TextBox>
+      ))}
+      <a
+        href="https://www.homeadvisor.com/rated.RutrasConcreteLLC.54191722.html"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Read more reviews on HomeAdvisor.
+      </a>
+    </Section>
+  </Article>
+);
+
+export default Testimonials;
