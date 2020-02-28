@@ -1,10 +1,10 @@
 import React from "react";
 import { Article, Section, TextBox, ImgBox, ImgStyled } from "./about.css";
-import Years from "../../images/homeadvisor/3year.webp";
-import Reviews from "../../images/homeadvisor/20reviews.webp";
-import Elite from "../../images/homeadvisor/elite.webp";
-import Soap from "../../images/homeadvisor/soap.webp";
-import TopRated from "../../images/homeadvisor/toprated.webp";
+import Years from "../../images/homeadvisor/3year.png";
+import Reviews from "../../images/homeadvisor/20reviews.png";
+import Elite from "../../images/homeadvisor/elite.png";
+import Soap from "../../images/homeadvisor/soap.png";
+import TopRated from "../../images/homeadvisor/toprated.png";
 
 const About = () => (
   <Article>
