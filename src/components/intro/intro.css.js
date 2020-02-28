@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const Section = styled.section`
   margin: 60% 0;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(113, 82, 92, 0.9);
   color: #f7f7ff;
   display: flex;
   justify-content: space-around;
   align-items: center;
   > div > p {
     font-size: 1.1rem;
-    line-height: 1.1;
+    line-height: 1.3;
   }
 `;
 
@@ -45,4 +45,5 @@ export const Cta = styled.button`
 export const Heading2 = styled.h2`
   font-size: 1.5rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 `;

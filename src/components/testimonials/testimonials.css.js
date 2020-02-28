@@ -30,6 +30,7 @@ export const TextBox = styled.section`
 `;
 
 export const Heading4 = styled.h4`
+  font-size: 1.2rem;
   margin: 0.7rem 0;
   font-weight: bold;
 `;

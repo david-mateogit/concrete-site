@@ -8,6 +8,7 @@ import image2 from "../../images/bg/Stamping3.jpg";
 import image3 from "../../images/bg/Sidewalk3.jpg";
 import image4 from "../../images/bg/Pavers6.jpg";
 import image5 from "../../images/bg/Sidewalk1.jpg";
+import image6 from "../../images/bg/Stairs.jpg";
 
 const Intro = () => (
   <>
@@ -15,7 +16,7 @@ const Intro = () => (
       <Section>
         <div>
           <Heading2>Fully insured projects.</Heading2>
-          <p>Sidewalks, Curbing, Stone Walls, Pavers </p>{" "}
+          <p>Sidewalks, Curbing, Stone Walls, Pavers and more. </p>{" "}
         </div>
         <Cta>
           <a href="tel: 809-917-2971">
@@ -25,7 +26,7 @@ const Intro = () => (
       </Section>
     </div>
     <BackgroundSlider
-      images={[image1, image2, image3, image4, image5]}
+      images={[image1, image2, image3, image4, image5, image6]}
       duration={10}
       transition={2}
     />
