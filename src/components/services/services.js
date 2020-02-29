@@ -1,6 +1,6 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import BackgroundSlider from "gatsby-image-background-slider";
+import useServices from "./use-services";
 import Banner from "../banner/banner";
 import {
   Article,
@@ -11,65 +11,31 @@ import {
   Heading3,
 } from "./services.css";
 
-const serviceList = [
-  "Concrete floor",
-  "Concrete stairs",
-  "Pavers",
-  "Pavers",
-  "Pavers",
-  "Sidewalk",
-  "Sidewalk",
-  "Sidewalk",
-  "Sidewalk",
-  "Sidewalk",
-  "Sidewalk",
-  "Sidewalk",
-  "Sidewalk",
-  "Sidewalk",
-  "Stamp concrete",
-  "Stamp concrete",
-  "Stamp concrete",
-  "Stamp concrete",
-  "Walls",
-];
+const Carousel = () => {
+  const servicePhotos = useServices();
 
-const Carousel = () => (
-  <CarouselBox>
-    <BackgroundSlider
-      query={useStaticQuery(graphql`
-        query {
-          backgrounds: allFile(
-            filter: {
-              sourceInstanceName: { eq: "images" }
-              relativeDirectory: { eq: "services" }
-            }
-          ) {
-            nodes {
-              relativePath
-              childImageSharp {
-                fluid(maxWidth: 500, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      `)}
-      style={{
-        transform: "scale(.9)",
-      }}
-    >
-      {serviceList.map(service => (
-        <ServiceBanner>{service}</ServiceBanner>
-      ))}
-    </BackgroundSlider>
-  </CarouselBox>
-);
+  return (
+    <CarouselBox>
+      <BackgroundSlider
+        query={servicePhotos}
+        style={{
+          transform: "scale(.9)",
+        }}
+      >
+        {servicePhotos.backgrounds.nodes.map((service, index) => (
+          <ServiceBanner key={`${service.name}-${index}`}>
+            {service.name.replace(/[0-9]/g, "")}
+          </ServiceBanner>
+        ))}
+      </BackgroundSlider>
+    </CarouselBox>
+  );
+};
 
 const Services = () => (
-  <Article>
+  <Article id="services">
     <Section>
-      <Banner title="Projects" />
+      <Banner title="Services" />
       <Carousel />
       <TextBox>
         <Heading3>Services Offered</Heading3>

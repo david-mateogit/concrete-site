@@ -5,6 +5,7 @@ import Logo from "../../images/icons/Logo.png";
 
 const Header = ({ siteTitle }) => (
   <header
+    id="home"
     style={{
       background: `#F7F7FF`,
       marginBottom: `1.45rem`,

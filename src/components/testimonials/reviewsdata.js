@@ -7,7 +7,7 @@ const review1 = {
 
 const review2 = {
   name: "Bonnie.",
-  project: "Install Stamped Concrete",
+  project: "Sidewalk and steps project",
   review:
     "I had gotten other estimates and he was right on . My sidewalk and steps are beautiful - highest quality. Hard workers and very polite and made me feel really comfortable. Art is very dependable and responsive and I highly recommend this company.",
 };

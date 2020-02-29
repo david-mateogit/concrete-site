@@ -9,7 +9,7 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        &copy; David Mateo
+        &copy; 2020 - David Mateo
       </a>
     </StyledFooter>
   );

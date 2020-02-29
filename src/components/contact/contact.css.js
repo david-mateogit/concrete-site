@@ -26,7 +26,7 @@ export const TextBox = styled.section`
 `;
 
 export const LinkStyled = styled.a`
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   display: block;
   margin-bottom: 0.5rem;

@@ -26,10 +26,10 @@ export const CarouselBox = styled.div`
   left: 0;
   top: 0;
   text-align: center;
-  z-index: 9000;
+  z-index: 1;
 `;
 
-export const ServiceBanner = styled.caption`
+export const ServiceBanner = styled.div`
   color: white;
   font-size: 2rem;
   position: absolute;

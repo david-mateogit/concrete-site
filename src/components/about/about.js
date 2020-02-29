@@ -7,7 +7,7 @@ import Soap from "../../images/homeadvisor/soap.png";
 import TopRated from "../../images/homeadvisor/toprated.png";
 
 const About = () => (
-  <Article>
+  <Article id="about">
     <Section>
       <TextBox>
         At <strong>Rutra's Concrete, LLC</strong>, we service 50 miles

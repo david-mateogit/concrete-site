@@ -5,6 +5,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import Header from "../header/header";
 
 import GlobalStyle from "../../global/global.css";
+import Footer from "../footer/footer";
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
+      <Footer />
     </>
   );
 };

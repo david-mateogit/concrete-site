@@ -11,7 +11,7 @@ const Insta = () => {
   const { username } = instaPhotos[0];
 
   return (
-    <Article>
+    <Article id="latest">
       <Banner title="Our Latest Projects." />
       <Section>
         <InstaBox>
@@ -20,6 +20,7 @@ const Insta = () => {
               href={`https://instagram.com/p/${photo.id}/`}
               target="_blank"
               rel="noreferrer noopener"
+              key={photo.id}
             >
               <Image
                 key={photo.id}

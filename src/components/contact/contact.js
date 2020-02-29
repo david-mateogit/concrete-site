@@ -5,7 +5,7 @@ import Phone from "../../images/icons/phone-call.svg";
 import Mail from "../../images/icons/envelope.svg";
 
 const Contact = () => (
-  <Article>
+  <Article id="contact">
     <Section>
       <Banner title="Contact" />
       <TextBox>

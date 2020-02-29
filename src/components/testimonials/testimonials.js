@@ -10,11 +10,11 @@ import {
 import { reviews } from "./reviewsdata";
 
 const Testimonials = () => (
-  <Article>
+  <Article id="testimonials">
     <Section>
       <Banner title="Testimonials" />
-      {reviews.map(review => (
-        <TextBox>
+      {reviews.map((review, index) => (
+        <TextBox key={`${review}-${index}`}>
           <Heading4> {review.name} 🌟🌟🌟🌟🌟</Heading4>
           <Heading5>{review.project}</Heading5>
           <blockquote>“{review.review}”</blockquote>
