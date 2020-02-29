@@ -19,7 +19,7 @@ const Hero = () => {
           <div>
             <Heading2>Fully insured projects.</Heading2>
             <p>Sidewalks, Curbing, Stone Walls, Pavers and more. </p>{" "}
-            <Heading2>Norwich, CT.</Heading2>
+            <Heading2>Preston, CT.</Heading2>
           </div>
           <Cta>
             <a href="tel: 809-917-2971">
