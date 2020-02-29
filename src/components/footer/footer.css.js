@@ -5,4 +5,8 @@ export const StyledFooter = styled.footer`
   font-size: 1rem;
   padding: 1rem;
   margin-bottom: -2rem;
+  > a {
+    color: #71525c;
+    font-weight: bold;
+  }
 `;

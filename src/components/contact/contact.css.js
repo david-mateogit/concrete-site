@@ -30,6 +30,8 @@ export const LinkStyled = styled.a`
   text-decoration: none;
   display: block;
   margin-bottom: 0.5rem;
+  color: #71525c;
+  font-weight: bold;
   > svg {
     transform: scale(1);
     transition: all 0.2s ease-in-out;

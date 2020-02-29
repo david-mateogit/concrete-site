@@ -14,7 +14,7 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   color: #71525c;
-  margin: 20% 0;
+  margin: 10% 0 20%;
 `;
 
 export const TextBox = styled.section`

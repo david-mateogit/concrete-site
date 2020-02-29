@@ -97,9 +97,20 @@ export default createGlobalStyle`
   position: fixed;
   width: 36px;
   height: 30px;
-    bottom: 50px;
+  bottom: 50px;
   right: 20px;
+  -webkit-tap-highlight-color: transparent;
+  /* increase touch area */
+ > button:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -20px;
+    left: -35px;
+  }
 }
+
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {

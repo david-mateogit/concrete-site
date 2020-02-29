@@ -25,7 +25,7 @@ const Testimonials = () => (
         target="_blank"
         rel="noopener noreferrer"
       >
-        Read more reviews on HomeAdvisor.
+        Read more reviews on HomeAdvisor &rarr;
       </a>
     </Section>
   </Article>
