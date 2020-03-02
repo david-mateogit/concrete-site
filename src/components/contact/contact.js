@@ -1,41 +1,44 @@
 import React from "react";
-import { Article, Section, TextBox, LinkStyled, Heading4 } from "./contact.css";
+import { Article, Section, TextBox, LinkStyled, Heading3 } from "./contact.css";
 import Banner from "../banner/banner";
 import Phone from "../../images/icons/phone-call.svg";
 import Mail from "../../images/icons/envelope.svg";
+import Pin from "../../images/icons/placeholder1.svg";
+import Form from "../form/form";
 
 const Contact = () => (
   <Article id="contact">
     <Section>
       <Banner title="Contact" />
+      <Form />
       <TextBox>
-        <LinkStyled href="tel:+860-949-5044">
-          <Phone width="10px" /> Phone: 860-949-5044
+        <p>We speak English, Portuguese, and Spanish.</p>
+        <LinkStyled href="tel:+1-(860)-949-5044">
+          <Phone />{" "}
+          <div>
+            <Heading3> Phone:</Heading3>
+            <p> (860) 949-5044</p>
+          </div>
         </LinkStyled>
         <LinkStyled href="mailto:rutracardoso@hotmail.com">
-          <Mail /> Email: rutracardoso@hotmail.com
+          <Mail />{" "}
+          <div>
+            <Heading3> Email:</Heading3> <p> rutracardoso@hotmail.com </p>
+          </div>
         </LinkStyled>
-        We speak English, Portuguese, and Spanish.
-      </TextBox>
-      <TextBox>
-        <Heading4>Service Area:</Heading4>
-        Connecticut, Rhode Island, and Massachusetts including: Manchester,
-        Norwich, Gales Ferry, Middletown, Groton, Storrs Mansfield, Mystic,
-        Coventry, Carolina, Central Village, Oakdale, Mansfield Depot, Putnam,
-        Danielson, Rogers, Kingston, Salem, Kenyon, Uncasville, Moodus, Greene,
-        Amston, Hanover, South Glastonbury, Mashantucket, Hebron, Cobalt,
-        Brooklyn, Hadlyme, North Franklin, Eastford, East Hampton, East Lyme,
-        Cromwell, Plainfield, Slocum, New London, Gilman, Moosup, Yantic,
-        Clinton, Charlestown, Wauregan, Clayville, Wyoming, Killingworth, Old
-        Mystic, Hope, East Haddam, Montville, Sterling, Andover, Ivoryton, South
-        Lyme, Pawcatuck, Waterford, Portland, Wakefield, Willimantic, Niantic,
-        Ballouville, Stonington, Centerbrook, Marlborough, Glastonbury, Bolton,
-        Chaplin, Scotland, Ashford, Old Lyme, Hope Valley, Westbrook, Abington,
-        Coventry, South Willington, Bozrah, Versailles, Pomfret Center, East
-        Glastonbury, West Greenwich, North Stonington, Haddam, Bradford,
-        Hampton, Higganum, Chester, North Westchester, Lebanon, Woodstock,
-        Oneco, Exeter, Foster, Pomfret, Woodstock Valley, Ashaway, Dayville,
-        Voluntown, Middle Haddam, North Scituate, Quaker Hill
+        <LinkStyled href="https://www.google.com/maps/place/Preston,+CT,+USA/@41.516539,-71.9919405,11z/data=!4m2!3m1!1s0x89e6767ba1e8d603:0x349ba147baef7940">
+          <Pin />
+          <div>
+            <Heading3> Address:</Heading3>{" "}
+            <p>
+              1234 Somewhere Road #5432
+              <br />
+              Preston, CT 06365
+              <br />
+              United States of America
+            </p>
+          </div>
+        </LinkStyled>
       </TextBox>
     </Section>
   </Article>

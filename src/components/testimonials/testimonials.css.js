@@ -4,8 +4,7 @@ export const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
-  min-height: 100vh;
+  margin-bottom: 4rem;
 `;
 
 export const Section = styled.section`
@@ -13,10 +12,10 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   color: #71525c;
-  margin: 10% 0;
+
   > a {
     margin-top: 1rem;
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 `;
 

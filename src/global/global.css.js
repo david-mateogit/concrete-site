@@ -177,6 +177,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
   background: rgba(0, 0, 0, 0.3);
 }
 
+
+ /* End of CSS File  */
 `;
 
 // /* Coolors Exported Palette - coolors.co/dfc5e2-f7f7ff-71525c-8d909b-a7acb0 */
