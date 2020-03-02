@@ -13,27 +13,40 @@ const Form = () => (
 
     <h3>Contact us for a free consultation!</h3>
     <Label htmlFor="name">
-      * Name
-      <Input type="text" name="name" id="name" required />
+      <Input type="text" name="name" id="name" placeholder="Name" required />
     </Label>
 
     <Label htmlFor="phone">
-      * Phone
-      <Input type="tel" name="phone" id="phone" required />
+      <Input type="tel" name="phone" id="phone" placeholder="Phone" required />
     </Label>
 
     <Label htmlFor="email">
-      * Email
-      <Input type="email" name="email" id="email" required />
+      <Input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required
+      />
     </Label>
     <Label htmlFor="location">
-      * Location
-      <Input type="text" name="location" id="location" required />
+      <Input
+        type="text"
+        name="location"
+        id="location"
+        placeholder="Location"
+        required
+      />
     </Label>
 
     <Label htmlFor="message">
-      * Message
-      <Textarea name="message" id="message" rows="6" required />
+      <Textarea
+        name="message"
+        id="message"
+        placeholder="Message"
+        rows="6"
+        required
+      />
     </Label>
 
     <Input type="submit" value="Send Message" className="special" />

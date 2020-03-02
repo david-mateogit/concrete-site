@@ -1,9 +1,17 @@
 import React from "react";
-import { Article, Section, TextBox, LinkStyled, Heading3 } from "./contact.css";
+import {
+  Article,
+  Section,
+  TextBox,
+  LinkStyled,
+  Div,
+  Heading3,
+} from "./contact.css";
 import Banner from "../banner/banner";
 import Phone from "../../images/icons/phone-call.svg";
 import Mail from "../../images/icons/envelope.svg";
 import Pin from "../../images/icons/placeholder1.svg";
+import License from "../../images/icons/id-card.svg";
 import Form from "../form/form";
 
 const Contact = () => (
@@ -26,19 +34,40 @@ const Contact = () => (
             <Heading3> Email:</Heading3> <p> rutracardoso@hotmail.com </p>
           </div>
         </LinkStyled>
-        <LinkStyled href="https://www.google.com/maps/place/Preston,+CT,+USA/@41.516539,-71.9919405,11z/data=!4m2!3m1!1s0x89e6767ba1e8d603:0x349ba147baef7940">
+        <LinkStyled
+          href="https://goo.gl/maps/RFMbBpQu4rKRTQu58"
+          target="_blank"
+        >
           <Pin />
           <div>
             <Heading3> Address:</Heading3>{" "}
             <p>
-              1234 Somewhere Road #5432
+              Rutra’s Concrete, LLC
+              <br />
+              20 Kendall Rd.
               <br />
               Preston, CT 06365
-              <br />
-              United States of America
             </p>
           </div>
         </LinkStyled>
+        <Div>
+          <License />
+          <div>
+            <Heading3> License #:</Heading3> <p>HIC.0645639</p>
+          </div>
+        </Div>
+      </TextBox>
+      <TextBox>
+        <Heading3>Work Hours</Heading3>
+        <ul>
+          <li> Monday: 7AM–7PM </li>
+          <li> Tuesday: 7AM–7PM </li>
+          <li> Wednesday: 7AM–7PM </li>
+          <li> Thursday: 7AM–7PM </li>
+          <li> Friday: 7AM–7PM </li>
+          <li> Saturday: 7AM–7PM </li>
+          <li> Sunday: CLOSED </li>
+        </ul>
       </TextBox>
     </Section>
   </Article>

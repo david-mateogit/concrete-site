@@ -15,17 +15,24 @@ const Testimonials = () => (
       <Banner title="Testimonials" />
       {reviews.map((review, index) => (
         <TextBox key={`${review}-${index}`}>
-          <Heading4> {review.name} 🌟🌟🌟🌟🌟</Heading4>
-          <Heading5>{review.project}</Heading5>
           <blockquote>“{review.review}”</blockquote>
+          <Heading5>{review.project}</Heading5>
+          <Heading4>
+            {" "}
+            <span role="img" aria-label="5 stars">
+              🌟🌟🌟🌟🌟
+            </span>{" "}
+            {review.name}{" "}
+          </Heading4>
         </TextBox>
       ))}
       <a
         href="https://www.homeadvisor.com/rated.RutrasConcreteLLC.54191722.html"
         target="_blank"
         rel="noopener noreferrer"
+        style={{ color: "#71525c" }}
       >
-        Read more reviews on HomeAdvisor &rarr;
+        Read more reviews on HomeAdvisor&rarr;
       </a>
     </Section>
   </Article>

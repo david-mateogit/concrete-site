@@ -1,9 +1,11 @@
 import React from "react";
 import BackgroundSlider from "react-background-slider";
 
-import { Cta, Section, Heading2 } from "./hero.css";
-import Phone from "../../images/icons/phone-call.svg";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { Article, Cta, Section, Heading2 } from "./hero.css";
+import Contact from "../../images/icons/contact.svg";
 import useHero from "./use-hero";
+import Header from "../header/header";
 
 const Hero = () => {
   const heroImages = useHero();
@@ -12,9 +14,11 @@ const Hero = () => {
     image => image.childImageSharp.fluid.src
   );
 
+  console.log(heroImages);
   return (
     <>
-      <div style={{ height: "50vh" }}>
+      <Article>
+        <Header siteTitle={"RUTRA'S CONCRETE LLC"} />
         <Section>
           <div>
             <Heading2>Fully insured projects.</Heading2>
@@ -22,12 +26,12 @@ const Hero = () => {
             <Heading2>Preston, CT.</Heading2>
           </div>
           <Cta>
-            <a href="tel: 809-917-2971">
-              <Phone /> Call Now!
-            </a>
+            <AnchorLink id="contact" className="menu-item" to="/#contact">
+              <Contact /> FREE CONSULTATION!
+            </AnchorLink>
           </Cta>
         </Section>
-      </div>
+      </Article>
       <BackgroundSlider images={imageArray} duration={10} transition={2} />
     </>
   );

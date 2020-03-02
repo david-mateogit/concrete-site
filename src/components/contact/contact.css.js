@@ -17,9 +17,15 @@ export const Section = styled.section`
 
 export const TextBox = styled.section`
   font-size: 1rem;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
   line-height: 1.4;
   align-self: flex-start;
+  > ul {
+    padding: 0 2rem;
+  }
+  > ul > li {
+    font-size: 1.3rem;
+  }
 `;
 
 export const LinkStyled = styled.a`
@@ -27,7 +33,7 @@ export const LinkStyled = styled.a`
   text-decoration: none;
   display: flex;
   color: #71525c;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 2rem;
 
   > svg {
@@ -35,6 +41,34 @@ export const LinkStyled = styled.a`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     width: 40px;
+
+    margin-right: 0.5rem;
+  }
+  > svg:hover {
+    transform: scale(1.1);
+  }
+  svg:active {
+    transform: scale(0.9);
+  }
+  > div > p {
+    margin-bottom: 0;
+  }
+`;
+
+export const Div = styled.div`
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: flex;
+  color: #71525c;
+  align-items: center;
+  margin-bottom: 2rem;
+
+  > svg {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    width: 40px;
+
     margin-right: 0.5rem;
   }
   > svg:hover {

@@ -10,7 +10,7 @@ export const FormGroup = styled.form`
   box-shadow: rgba(0, 0, 0, 0.1) 0 0 15px;
   box-sizing: border-box;
   margin: 1rem auto;
-  padding: 30px 55px;
+  padding: 30px 38px;
 
   > h3 {
     text-align: left;
@@ -31,7 +31,7 @@ export const Label = styled.label`
 export const Input = styled.input`
   padding: 0.5rem;
   font-size: 16px;
-
+  background: rgba(167, 172, 176, 0.2);
   display: block;
   border-radius: 4px;
   border: 1px solid #ccc;
@@ -63,6 +63,7 @@ export const Textarea = styled.textarea`
   padding: 0.5rem;
   font-size: 16px;
   display: block;
+  background: rgba(167, 172, 176, 0.2);
   border-radius: 4px;
   border: 1px solid #ccc;
   &:focus {

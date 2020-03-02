@@ -11,6 +11,7 @@ import Testimonials from "../components/testimonials/testimonials";
 import Contact from "../components/contact/contact";
 // import Contact from "../components/form-contact/contact";
 import Insta from "../components/insta/insta";
+import ServiceArea from "../components/servicearea/servicearea";
 
 const IndexPage = () => (
   <>
@@ -22,6 +23,7 @@ const IndexPage = () => (
       <Services />
       <Testimonials />
       <Contact />
+      <ServiceArea />
       <Insta />
     </Layout>
   </>

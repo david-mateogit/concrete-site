@@ -39,7 +39,7 @@ const Sidebar = () => {
       </AnchorButton>
       <AnchorButton type="button" onClick={() => closeMenu()}>
         <AnchorLink id="contact" className="menu-item" to="/#latest">
-          Latest
+          Latest Projects
         </AnchorLink>
       </AnchorButton>
       <AnchorButton type="button" onClick={() => closeMenu()}>

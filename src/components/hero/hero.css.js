@@ -1,12 +1,26 @@
 import styled from "styled-components";
 
+export const Article = styled.article`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  > header {
+    background: rgba(247, 247, 255, 0.9);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+`;
+
 export const Section = styled.section`
-  margin: 60% 0;
   padding: 2rem;
   background-color: rgba(113, 82, 92, 0.9);
   color: #f7f7ff;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   > div > p {
     font-size: 1.1rem;

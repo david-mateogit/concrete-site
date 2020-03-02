@@ -7,7 +7,6 @@ const Header = ({ siteTitle }) => (
   <header
     id="home"
     style={{
-      background: `#F7F7FF`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -31,7 +30,7 @@ const Header = ({ siteTitle }) => (
         <img
           src={Logo}
           alt="Logo"
-          width="80px"
+          width="100px"
           style={{ margin: "0 1rem 0 0" }}
         />
         <h1

@@ -21,8 +21,13 @@ export const Section = styled.section`
 
 export const TextBox = styled.section`
   font-size: 1rem;
-  padding: 1rem;
-  margin: 1rem 0;
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 0 15px;
+  box-sizing: border-box;
+  margin: 1rem auto;
+  padding: 30px 38px;
+
   > blockquote {
     line-height: 1.4;
   }
@@ -32,8 +37,10 @@ export const Heading4 = styled.h4`
   font-size: 1.2rem;
   margin: 0.7rem 0;
   font-weight: bold;
+  text-align: right;
 `;
 export const Heading5 = styled.h5`
-  margin: 0.5rem 0;
+  margin: 0.8rem 0 0.5rem;
   font-weight: bold;
+  text-align: right;
 `;
