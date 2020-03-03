@@ -14,3 +14,10 @@ export const Section = styled.section`
   color: #71525c;
   margin: 20% 0;
 `;
+
+export const TextBox = styled.section`
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 1rem;
+  margin: 4rem 0;
+`;

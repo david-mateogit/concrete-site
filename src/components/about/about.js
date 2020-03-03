@@ -10,8 +10,14 @@ const About = () => (
   <Article id="about">
     <Section>
       <TextBox>
-        At <strong>Rutra's Concrete, LLC</strong>, we service 50 miles
-        surrounding the Norwich area. <br />
+        Rutra’s Concrete, LLC. specializes in all types of concrete masonry
+        construction. We are fully staffed, and able to handle any-size project.
+        With over 20 years of experience, Rutra’s Concrete offers a 100%
+        satisfaction assurance on each project.
+        <br /> Our mission is to create a long-term client relationship based on
+        the achievement of the client’s goals. It is our duty to satisfy our
+        customer’s needs providing also a safe and welcome environment.
+        <br />
         No job is too big or small. Give us a call whether you need a large
         concrete project or you need a quick repair. <br />
         <strong>Rutra's Concrete, LLC</strong>, is the company to call for
