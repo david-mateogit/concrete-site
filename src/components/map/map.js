@@ -4,13 +4,12 @@ import Pin from "../../images/icons/placeholder1.svg";
 
 const isClient = typeof window !== "undefined";
 
-const GoogleMap = props => {
-  // const { address, googleMapsApiKey } = props;
+const GoogleMap = () => {
   const address = {
-    lng: -71.9919405,
-    lat: 41.516539,
+    lng: -72.015979,
+    lat: 41.522109,
   };
-  const googleMapsApiKey = "AIzaSyBdFEWsOANfs98w3E8gRjUoTx8zhHGij2k";
+  const googleMapsApiKey = process.env.GATSBY_GOOGLE_MAPS_API;
   const { lat } = address;
   const { lng } = address;
   return (
@@ -23,7 +22,7 @@ const GoogleMap = props => {
           <GoogleMapReact
             bootstrapURLKeys={{ key: googleMapsApiKey }}
             defaultCenter={[lat, lng]}
-            defaultZoom={7}
+            defaultZoom={9}
           >
             <div
               className="marker"
@@ -32,6 +31,7 @@ const GoogleMap = props => {
               style={{ height: "50px", width: "50px" }}
             >
               <Pin fill="red" width="30px" />
+              PRESTON
             </div>
           </GoogleMapReact>
         )}

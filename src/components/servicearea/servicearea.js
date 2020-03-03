@@ -9,7 +9,11 @@ const ServiceArea = () => (
     <Section>
       <Banner title="Service Area" />
       <TextBox>
-        Our service area includes the following towns and surrounding areas of
+        At Rutra's Concrete, LLC, we service 50 miles surrounding the Norwich
+        area.
+        <br />
+        <br />
+        Our support includes the following towns and surrounding areas of
         Connecticut: Norwich, Preston, Stonington, New London, Old Lyme, Essex,
         Waterford, Bozrah, Ledgyard, Montville, Plainefield, Colchester, Salem
         and beyond!

@@ -12,12 +12,12 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   color: #71525c;
-  margin: 20% 0;
+  margin: 10% 0;
 `;
 
 export const TextBox = styled.section`
   font-size: 1.2rem;
   line-height: 1.5;
   padding: 1rem;
-  margin: 4rem 0;
+  margin: 2rem 0;
 `;
