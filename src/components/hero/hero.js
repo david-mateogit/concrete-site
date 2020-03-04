@@ -11,7 +11,14 @@ import Header from "../header/header";
 const Carousel = () => {
   const heroImages = useHero();
 
-  return <BackgroundSlider query={heroImages} />;
+  return (
+    <BackgroundSlider
+      query={heroImages}
+      initDelay={10}
+      duration={12}
+      loading="eager"
+    />
+  );
 };
 const Hero = () => (
   <>
@@ -29,7 +36,7 @@ const Hero = () => (
           </AnchorLink>
         </Cta>
       </Section>
-      <ArrowSection className="header-down-arrow">
+      <ArrowSection>
         <DownArrow />
       </ArrowSection>
     </Article>
