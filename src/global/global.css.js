@@ -169,15 +169,25 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: inline-block;
   margin: 1rem;
   color: rgba(247, 247, 255, 1);
-  outline: none;
   box-sizing: border-box;
   text-align: left;
-  :hover {
+  :hover, :focus, :active {
     border-bottom: 1px solid rgba(247, 247, 255, 1);
-     overflow: hidden;
-      margin-bottom: 12px;
+    overflow: hidden;
+    margin-bottom: 12px;
+    outline: 0;
   }
+}
 
+
+
+.bm-item::-moz-focus-inner {
+  border: 0;
+}
+
+
+.menu-item, .menu-item:hover, .menu-item:active, .menu-item:focus {
+  outline: 0;
 }
 
 /* Styling of overlay */

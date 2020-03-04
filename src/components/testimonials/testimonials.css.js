@@ -16,7 +16,6 @@ export const Section = styled.section`
   color: #71525c;
 
   ${MEDIA.MIN_TABLET`
-  text-align: center;
   max-width: 600px;
   `};
 
@@ -38,8 +37,10 @@ export const TextBox = styled.section`
   ${MEDIA.MIN_TABLET`
    font-size: 1.3rem;
   `};
+
   > blockquote {
     line-height: 1.4;
+    text-align: left;
   }
 `;
 
@@ -49,6 +50,7 @@ export const Heading4 = styled.h4`
   font-weight: bold;
   text-align: right;
 `;
+
 export const Heading5 = styled.h5`
   margin: 0.8rem 0 0.5rem;
   font-weight: bold;

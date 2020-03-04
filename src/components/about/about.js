@@ -1,5 +1,12 @@
 import React from "react";
-import { Article, Section, TextBox, ImgBox, ImgStyled } from "./about.css";
+import {
+  Article,
+  Section,
+  TextBox,
+  ImgBox,
+  ImgStyled,
+  Headgins3,
+} from "./about.css";
 import Years from "../../images/homeadvisor/3year.png";
 import Reviews from "../../images/homeadvisor/20reviews.png";
 import Elite from "../../images/homeadvisor/elite.png";
@@ -23,7 +30,7 @@ const About = () => (
         <strong>Rutra's Concrete, LLC</strong>, is the company to call for
         quality.
       </TextBox>
-      <h3>Trusted by HomeAdvisor</h3>
+      <Headgins3>Trusted by HomeAdvisor</Headgins3>
       <ImgBox>
         <ImgStyled src={Soap} alt="Seal of Approval" />
         <ImgStyled src={Years} alt="More than 3 years" />

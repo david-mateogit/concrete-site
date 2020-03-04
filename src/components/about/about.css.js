@@ -47,8 +47,8 @@ export const ImgBox = styled.div`
 `;
 
 export const ImgStyled = styled.img`
-  width: 110px;
-  padding: 0.5rem;
+  width: 100px;
+  padding: 1rem;
   transform: scale(1);
   transition: all 0.2s ease-in-out;
   &:hover {
@@ -56,6 +56,11 @@ export const ImgStyled = styled.img`
   }
 
   ${MEDIA.MIN_TABLET`
-      width: 140px;
+      width: 130px;
+      padding: 1rem;
   `};
+`;
+
+export const Headgins3 = styled.h3`
+  font-weight: bold;
 `;

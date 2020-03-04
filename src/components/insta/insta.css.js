@@ -30,7 +30,7 @@ export const Section = styled.section`
 export const InstaBox = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin: 1.5rem -0.5rem;
   padding: 0.5rem 0;
   > a {
@@ -42,6 +42,9 @@ export const InstaBox = styled.div`
     transition: 200ms box-shadow linear;
     transition: 200ms transform ease-in-out;
     transform: scale(1);
+    ${MEDIA.MIN_TABLET`
+    width: 180px;
+    `};
 
     :hover {
       box-shadow: 0 2px 14px #22222244;
