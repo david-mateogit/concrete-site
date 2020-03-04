@@ -8,6 +8,7 @@ export const StyledHeader = styled.header`
 
 export const Container = styled.header`
   margin: 0 auto;
+  width: 100%;
   max-width: 960;
   padding: 1.45rem 1.0875rem;
 `;

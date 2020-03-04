@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import MEDIA from "../helpers/mediaTemplates";
 
 export default createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -97,9 +98,16 @@ export default createGlobalStyle`
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 50%;
+  right: 10%;
   bottom: 50px;
-  margin-left: 320px;
+  ${"" /* margin-left: 320px; */}
+
+  ${MEDIA.MIN_TABLET`
+      right: 14%;
+    `};
+     ${MEDIA.MIN_DESKTOP`
+      left: calc(50vw + 300px);
+    `};
 
   -webkit-tap-highlight-color: transparent;
   outline: 0;
@@ -175,7 +183,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
   text-decoration: none;
   display: inline-block;
-  margin: 1rem;
+  margin: 0.5rem;
   color: rgba(247, 247, 255, 1);
   box-sizing: border-box;
   text-align: left;

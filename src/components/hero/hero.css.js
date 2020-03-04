@@ -56,6 +56,7 @@ export const Article = styled.article`
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 500px;
   > header {
     background: rgba(247, 247, 255, 0.9);
     width: 100%;
@@ -84,6 +85,9 @@ export const Section = styled.section`
   text-align: center;
   max-width: 600px;
   `};
+  > div {
+    padding: 0.8rem 0;
+  }
   > div > p {
     font-size: 1.1rem;
     line-height: 1.3;
@@ -111,7 +115,9 @@ export const Cta = styled.button`
   > a {
     text-decoration: none;
     color: white;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     > svg {
       transform: scale(1);
       transition: all 0.2s ease-in-out;
