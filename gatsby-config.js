@@ -1,8 +1,18 @@
 module.exports = {
   siteMetadata: {
     title: `RUTRA'S CONCRETE LLC`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Rutra's Concrete, LLC. specializes in all types of concrete masonry construction. We are fully staffed, and able to handle any-size project.`,
+    author: `David Mateo`,
+    siteUrl: `https://www.rutrasconcrete.com`,
+    socialLinks: {
+      instagram: `https://www.instagram.com/rutrasconcrete/`,
+      email: `rutracardoso@hotmail.com`,
+      phone: `18609495044`,
+      address: `Rutra’s Concrete, LLC
+              20 Kendall Rd.
+              Preston, CT 06365`,
+    },
+    keywords: `['masonry', 'contractor', 'concrete', 'construction']`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,13 +30,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `rutras-concrete`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icons/Logo.png`, // This path is relative to the root of the site.
       },
     },
     {

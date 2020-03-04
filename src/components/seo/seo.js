@@ -12,6 +12,14 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            siteUrl
+            socialLinks {
+              instagram
+              email
+              phone
+              address
+            }
+            keywords
           }
         }
       }
@@ -61,13 +69,7 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    >
-      <link
-        href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-        rel="stylesheet"
-        type="text/css"
-      />
-    </Helmet>
+    />
   );
 }
 

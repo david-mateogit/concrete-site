@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import MEDIA from "../../helpers/mediaTemplates";
 
 export const Article = styled.article`
   display: flex;
@@ -43,11 +44,29 @@ export const TextBox = styled.section`
   font-size: 1.2rem;
   padding: 1rem;
   margin-top: 1rem;
+  ${MEDIA.MIN_TABLET`
+      font-size: 1.7rem;
+  `};
+  > p {
+    margin-bottom: 0.5rem;
+  }
   > ul {
     margin-top: 0.5rem;
-    padding-left: 1.4rem;
+    list-style: none;
+
+    ${MEDIA.MIN_TABLET`
+    max-width: 600px;
+    font-size: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    `};
+
     > li {
       padding: 0.2rem;
+      ${MEDIA.MIN_TABLET`
+      padding: 0.6rem;
+      margin-right: 0.7rem;
+      `};
     }
   }
 `;
@@ -56,4 +75,9 @@ export const Heading3 = styled.h3`
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+
+  ${MEDIA.MIN_TABLET`
+      font-size: 2rem;
+      margin-bottom: 1rem;
+  `};
 `;

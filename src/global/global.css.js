@@ -157,7 +157,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  padding: 0.8em;
+  padding: 0.8em 0.8em 0.8em 0;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -170,6 +170,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   margin: 1rem;
   color: rgba(247, 247, 255, 1);
   outline: none;
+  box-sizing: border-box;
+  text-align: left;
+  :hover {
+    border-bottom: 1px solid rgba(247, 247, 255, 1);
+     overflow: hidden;
+      margin-bottom: 12px;
+  }
+
 }
 
 /* Styling of overlay */

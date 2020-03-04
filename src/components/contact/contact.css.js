@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import MEDIA from "../../helpers/mediaTemplates";
 
 export const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: 4rem 0;
+  align-items: center;
 `;
 
 export const Section = styled.section`
@@ -13,6 +15,18 @@ export const Section = styled.section`
   justify-content: space-around;
   align-items: center;
   color: #71525c;
+
+  ${MEDIA.PHONE`
+   flex-direction: column;
+   margin: 0;
+  `};
+
+  ${MEDIA.MIN_TABLET`
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin-top: 4rem;
+   justify-content: space-around;
+  `};
 `;
 
 export const TextBox = styled.section`

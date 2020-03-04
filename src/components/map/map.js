@@ -31,7 +31,7 @@ const GoogleMap = () => {
               style={{ height: "50px", width: "50px" }}
             >
               <Pin fill="red" width="30px" />
-              PRESTON
+              RUTRA'S CONCRETE
             </div>
           </GoogleMapReact>
         )}

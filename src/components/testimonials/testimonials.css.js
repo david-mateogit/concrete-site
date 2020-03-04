@@ -1,9 +1,11 @@
 import styled from "styled-components";
+import MEDIA from "../../helpers/mediaTemplates";
 
 export const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   margin-bottom: 4rem;
 `;
 
@@ -12,6 +14,11 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   color: #71525c;
+
+  ${MEDIA.MIN_TABLET`
+  text-align: center;
+  max-width: 600px;
+  `};
 
   > a {
     margin-top: 1rem;
@@ -28,6 +35,9 @@ export const TextBox = styled.section`
   margin: 1rem auto;
   padding: 30px 38px;
 
+  ${MEDIA.MIN_TABLET`
+   font-size: 1.3rem;
+  `};
   > blockquote {
     line-height: 1.4;
   }

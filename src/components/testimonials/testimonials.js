@@ -11,8 +11,8 @@ import { reviews } from "./reviewsdata";
 
 const Testimonials = () => (
   <Article id="testimonials">
+    <Banner title="Testimonials" />
     <Section>
-      <Banner title="Testimonials" />
       {reviews.map((review, index) => (
         <TextBox key={`${review}-${index}`}>
           <blockquote>“{review.review}”</blockquote>

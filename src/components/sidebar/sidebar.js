@@ -10,9 +10,7 @@ const Sidebar = () => {
     setMenuOpen(state.isOpen);
   };
   const closeMenu = () => {
-    console.log(menuOpen);
     setMenuOpen(false);
-    console.log(menuOpen);
   };
 
   return (
@@ -38,13 +36,18 @@ const Sidebar = () => {
         </AnchorLink>
       </AnchorButton>
       <AnchorButton type="button" onClick={() => closeMenu()}>
-        <AnchorLink id="contact" className="menu-item" to="/#latest">
-          Latest Projects
+        <AnchorLink id="contact" className="menu-item" to="/#contact">
+          Contact
         </AnchorLink>
       </AnchorButton>
       <AnchorButton type="button" onClick={() => closeMenu()}>
-        <AnchorLink id="contact" className="menu-item" to="/#contact">
-          Contact
+        <AnchorLink id="service-area" className="menu-item" to="/#service-area">
+          Service Area
+        </AnchorLink>
+      </AnchorButton>
+      <AnchorButton type="button" onClick={() => closeMenu()}>
+        <AnchorLink id="contact" className="menu-item" to="/#latest">
+          Latest Projects
         </AnchorLink>
       </AnchorButton>
     </Menu>

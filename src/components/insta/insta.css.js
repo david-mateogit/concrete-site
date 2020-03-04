@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import MEDIA from "../../helpers/mediaTemplates";
 
 export const Article = styled.article`
   display: flex;
@@ -6,8 +7,6 @@ export const Article = styled.article`
   justify-content: space-evenly;
   align-content: center;
   align-items: center;
-
-  min-height: 100vh;
   margin-top: 4rem;
 `;
 
@@ -15,6 +14,11 @@ export const Section = styled.section`
   margin: 2rem 0;
   color: #71525c;
   padding: 0.5rem;
+
+  ${MEDIA.MIN_TABLET`
+  text-align: center;
+  max-width: 600px;
+  `};
   > a {
     font-size: 1.2rem;
     display: block;

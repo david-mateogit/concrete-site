@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-
 import GlobalStyle from "../../global/global.css";
 import Footer from "../footer/footer";
 

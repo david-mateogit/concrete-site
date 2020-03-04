@@ -5,9 +5,9 @@ import GoogleMap from "../map/map";
 import { Article, Section, TextBox } from "./servicearea.css";
 
 const ServiceArea = () => (
-  <Article>
+  <Article id="service-area">
+    <Banner title="Service Area" />
     <Section>
-      <Banner title="Service Area" />
       <TextBox>
         At Rutra's Concrete, LLC, we service 50 miles surrounding the Norwich
         area.

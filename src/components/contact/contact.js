@@ -16,8 +16,8 @@ import Form from "../form/form";
 
 const Contact = () => (
   <Article id="contact">
+    <Banner title="Contact" />
     <Section>
-      <Banner title="Contact" />
       <Form />
       <TextBox>
         <p>We speak English, Portuguese, and Spanish.</p>
@@ -56,16 +56,10 @@ const Contact = () => (
             <Heading3> License #:</Heading3> <p>HIC.0645639</p>
           </div>
         </Div>
-      </TextBox>
-      <TextBox>
         <Heading3>Work Hours</Heading3>
         <ul>
-          <li> Monday: 7AM–7PM </li>
-          <li> Tuesday: 7AM–7PM </li>
-          <li> Wednesday: 7AM–7PM </li>
-          <li> Thursday: 7AM–7PM </li>
-          <li> Friday: 7AM–7PM </li>
-          <li> Saturday: 7AM–7PM </li>
+          <li> Monday through Friday 7AM–7PM </li>
+          <li> Saturday: 7AM–12Noon </li>
           <li> Sunday: CLOSED </li>
         </ul>
       </TextBox>
