@@ -17,6 +17,7 @@ const Carousel = () => {
       initDelay={10}
       duration={12}
       loading="eager"
+      alt="backgrounds"
     />
   );
 };

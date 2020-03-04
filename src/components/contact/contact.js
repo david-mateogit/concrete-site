@@ -37,6 +37,8 @@ const Contact = () => (
         <LinkStyled
           href="https://goo.gl/maps/RFMbBpQu4rKRTQu58"
           target="_blank"
+          rel="noopener noreferrer"
+          title="address"
         >
           <Pin />
           <div>
