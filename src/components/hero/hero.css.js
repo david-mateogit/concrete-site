@@ -1,5 +1,54 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import MEDIA from "../../helpers/mediaTemplates";
+
+// animations
+
+const pulse = keyframes`
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+`;
+
+const fadeSlideUp = keyframes`
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+
+`;
+const fadeSlideDown = keyframes`
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-4rem);
+            transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+
+`;
+
+// END ANIMATIONS
 
 export const Article = styled.article`
   display: flex;
@@ -14,6 +63,8 @@ export const Article = styled.article`
     top: 0;
     left: 0;
     overflow: hidden;
+    opacity: 0;
+    animation: ${fadeSlideDown} 1s 0.5s ease-out forwards;
   }
 `;
 
@@ -24,6 +75,10 @@ export const Section = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30%;
+  opacity: 0;
+
+  animation: ${fadeSlideUp} 2s 1.5s ease-out forwards;
 
   ${MEDIA.MIN_TABLET`
   text-align: center;
@@ -47,17 +102,21 @@ export const Cta = styled.button`
   border: none;
   background: transparent;
   color: white;
-
   font-weight: bold;
   outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   > a {
     text-decoration: none;
     color: white;
-
+    display: block;
     > svg {
       transform: scale(1);
       transition: all 0.2s ease-in-out;
       cursor: pointer;
+      display: block;
     }
     > svg:hover {
       transform: scale(1.1);
@@ -76,4 +135,26 @@ export const Heading2 = styled.h2`
   ${MEDIA.MIN_TABLET`
    font-size: 2rem;
   `};
+`;
+
+export const ArrowSection = styled.section`
+  animation: ${pulse} 2s 3s ease-out infinite;
+  bottom: 4vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+
+  > svg {
+    animation: ${fadeSlideUp} 2s 3s ease-out forwards;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+
+    ${MEDIA.MIN_TABLET`
+      width: 40px;
+      height: 40px;
+    `};
+  }
 `;

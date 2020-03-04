@@ -100,6 +100,11 @@ export default createGlobalStyle`
   bottom: 50px;
   right: 20px;
   -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  > button:active, :focus {
+      outline: 0;
+      border: 0;
+    }
   /* increase touch area */
  > button:before {
     content: '';
@@ -108,6 +113,7 @@ export default createGlobalStyle`
     height: 100px;
     top: -20px;
     left: -35px;
+
   }
 }
 
@@ -171,12 +177,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
   color: rgba(247, 247, 255, 1);
   box-sizing: border-box;
   text-align: left;
-  :hover, :focus, :active {
+  :hover,  :active {
     border-bottom: 1px solid rgba(247, 247, 255, 1);
     overflow: hidden;
     margin-bottom: 12px;
     outline: 0;
   }
+  :focus {
+    outline: none;
+  }
+
 }
 
 

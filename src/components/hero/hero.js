@@ -2,8 +2,9 @@ import React from "react";
 import BackgroundSlider from "react-background-slider";
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
-import { Article, Cta, Section, Heading2 } from "./hero.css";
+import { Article, Cta, Section, Heading2, ArrowSection } from "./hero.css";
 import Contact from "../../images/icons/contact.svg";
+import DownArrow from "../../images/icons/down-arrow.svg";
 import useHero from "./use-hero";
 import Header from "../header/header";
 
@@ -31,6 +32,9 @@ const Hero = () => {
             </AnchorLink>
           </Cta>
         </Section>
+        <ArrowSection className="header-down-arrow">
+          <DownArrow />
+        </ArrowSection>
       </Article>
       <BackgroundSlider images={imageArray} duration={10} transition={2} />
     </>
