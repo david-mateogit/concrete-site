@@ -8,6 +8,7 @@ import {
   StyledImg,
   Headings1,
 } from "./header.css";
+import Navbar from "../navbar/navbar";
 
 const Header = ({ siteTitle }) => (
   <StyledHeader id="home">
@@ -16,6 +17,7 @@ const Header = ({ siteTitle }) => (
         <StyledImg src={Logo} alt="Logo" />
         <Headings1>{siteTitle}</Headings1>
       </StyledLink>
+      <Navbar />
     </Container>
   </StyledHeader>
 );

@@ -97,8 +97,10 @@ export default createGlobalStyle`
   position: fixed;
   width: 36px;
   height: 30px;
+  left: 50%;
   bottom: 50px;
-  right: 20px;
+  margin-left: 320px;
+
   -webkit-tap-highlight-color: transparent;
   outline: 0;
   > button:active, :focus {
