@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "gatsby";
+import Img from "gatsby-image";
 import MEDIA from "../../helpers/mediaTemplates";
 
 export const StyledHeader = styled.header`
@@ -19,7 +20,7 @@ export const StyledLink = styled(Link)`
   flex-direction: column;
 `;
 
-export const StyledImg = styled.img`
+export const StyledImg = styled(Img)`
   width: 100px;
   margin: 0 1rem 0 0;
 

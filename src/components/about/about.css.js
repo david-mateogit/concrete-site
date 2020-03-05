@@ -1,3 +1,4 @@
+import Img from "gatsby-image";
 import styled from "styled-components";
 import MEDIA from "../../helpers/mediaTemplates";
 
@@ -46,9 +47,9 @@ export const ImgBox = styled.div`
   margin-top: 1rem;
 `;
 
-export const ImgStyled = styled.img`
+export const ImgStyled = styled(Img)`
   width: 100px;
-  padding: 1rem;
+  margin: 1rem;
   transform: scale(1);
   transition: all 0.2s ease-in-out;
   &:hover {
@@ -57,10 +58,9 @@ export const ImgStyled = styled.img`
 
   ${MEDIA.MIN_TABLET`
       width: 130px;
-      padding: 1rem;
   `};
 `;
 
-export const Headgins3 = styled.h3`
+export const Headings3 = styled.h3`
   font-weight: bold;
 `;

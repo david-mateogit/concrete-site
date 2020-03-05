@@ -20,7 +20,7 @@ const GoogleMap = () => {
       <div className="map" style={{ height: "500px" }}>
         {isClient && (
           <GoogleMapReact
-            bootstrapURLKeys={{ key: googleMapsApiKey }}
+            bootstrapURLKeys={{ key: { googleMapsApiKey } }}
             defaultCenter={[lat, lng]}
             defaultZoom={9}
           >

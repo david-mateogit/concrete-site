@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import React from "react";
-import Logo from "../../images/icons/Logo.png";
+import useHero from "./use-header";
+
 import {
   StyledHeader,
   Container,
@@ -10,18 +11,23 @@ import {
 } from "./header.css";
 import Navbar from "../navbar/navbar";
 
-const Header = ({ siteTitle }) => (
-  <StyledHeader id="home">
-    <Container>
-      <StyledLink to="/">
-        <StyledImg src={Logo} alt="Logo" />
-        <Headings1>{siteTitle}</Headings1>
-      </StyledLink>
-      <Navbar />
-    </Container>
-  </StyledHeader>
-);
-
+const Header = ({ siteTitle }) => {
+  const logo = useHero();
+  return (
+    <StyledHeader id="home">
+      <Container>
+        <StyledLink to="/">
+          <StyledImg
+            fluid={logo.Logo.edges[0].node.childImageSharp.fluid}
+            alt="Logo"
+          />
+          <Headings1>{siteTitle}</Headings1>
+        </StyledLink>
+        <Navbar />
+      </Container>
+    </StyledHeader>
+  );
+};
 Header.propTypes = {
   siteTitle: PropTypes.string,
 };
