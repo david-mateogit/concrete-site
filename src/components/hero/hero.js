@@ -1,4 +1,5 @@
 import React from "react";
+import Div100vh from "react-div-100vh";
 import BackgroundSlider from "gatsby-image-background-slider";
 
 import { AnchorLink } from "gatsby-plugin-anchor-links";
@@ -23,25 +24,27 @@ const Carousel = () => {
 };
 const Hero = () => (
   <>
-    <Article>
-      <Header siteTitle={"RUTRA'S CONCRETE LLC"} />
-      <Section>
-        <div>
-          <Heading2>Fully insured projects.</Heading2>
-          <p>Sidewalks, Curbing, Stone Walls, Pavers and more. </p>{" "}
-          <Heading2>Preston, CT.</Heading2>
-        </div>
-        <Cta>
-          <AnchorLink id="contact" className="menu-item" to="/#contact">
-            <Contact /> FREE CONSULTATION!
-          </AnchorLink>
-        </Cta>
-      </Section>
-      <ArrowSection>
-        <DownArrow />
-      </ArrowSection>
-    </Article>
-    <Carousel />
+    <Div100vh>
+      <Article>
+        <Header siteTitle={"RUTRA'S CONCRETE LLC"} />
+        <Section>
+          <div>
+            <Heading2>Fully insured projects.</Heading2>
+            <p>Sidewalks, Curbing, Stone Walls, Pavers and more. </p>{" "}
+            <Heading2>Preston, CT.</Heading2>
+          </div>
+          <Cta>
+            <AnchorLink id="contact" className="menu-item" to="/#contact">
+              <Contact /> FREE CONSULTATION!
+            </AnchorLink>
+          </Cta>
+        </Section>
+        <ArrowSection>
+          <DownArrow />
+        </ArrowSection>
+      </Article>
+      <Carousel />
+    </Div100vh>
   </>
 );
 

@@ -6,7 +6,7 @@ export const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: -6rem;
+  margin-top: 1rem;
   align-items: center;
 
   ${MEDIA.MIN_TABLET`
