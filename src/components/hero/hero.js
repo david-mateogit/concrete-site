@@ -19,6 +19,9 @@ const Carousel = () => {
       duration={12}
       loading="eager"
       alt="backgrounds"
+      style={{
+        marginBottom: "4rem",
+      }}
     />
   );
 };
