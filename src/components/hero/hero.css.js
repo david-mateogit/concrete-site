@@ -55,8 +55,9 @@ export const Article = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: -webkit-fill-available;
   min-height: 100vh;
+  min-height: 100%;
+  min-height: -webkit-fill-available;
 
   > header {
     background: rgba(247, 247, 255, 0.9);

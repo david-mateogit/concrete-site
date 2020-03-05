@@ -49,6 +49,10 @@ export default createGlobalStyle`
 
   }
 
+  html,
+  body{
+  height: 100%;
+  }
 
 
   blockquote, q {
