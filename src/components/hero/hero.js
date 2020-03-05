@@ -20,14 +20,18 @@ const Carousel = () => {
       loading="eager"
       alt="backgrounds"
       style={{
-        marginBottom: "4rem",
+        marginBottom: "5rem",
       }}
     />
   );
 };
 const Hero = () => (
   <>
-    <Div100vh>
+    <Div100vh
+      style={{
+        marginBottom: "4rem",
+      }}
+    >
       <Article>
         <Header siteTitle={"RUTRA'S CONCRETE LLC"} />
         <Section>

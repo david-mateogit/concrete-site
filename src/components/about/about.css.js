@@ -6,11 +6,11 @@ export const Article = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 1rem;
+  margin-top: 2rem;
   align-items: center;
 
   ${MEDIA.MIN_TABLET`
-    margin-top: 1rem;
+    margin-top: 2rem;
   `};
 `;
 

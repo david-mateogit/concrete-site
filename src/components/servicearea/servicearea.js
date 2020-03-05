@@ -15,7 +15,7 @@ const ServiceArea = () => (
         <br />
         Our support includes the following towns and surrounding areas of
         Connecticut: Norwich, Preston, Stonington, New London, Old Lyme, Essex,
-        Waterford, Bozrah, Ledgyard, Montville, Plainefield, Colchester, Salem
+        Waterford, Bozrah, Ledgyard, Montville, Plainfield, Colchester, Salem
         and beyond!
       </TextBox>
       <GoogleMap />
