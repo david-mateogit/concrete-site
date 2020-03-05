@@ -13,7 +13,7 @@ const useServices = () => {
           relativePath
           name
           childImageSharp {
-            fluid(maxWidth: 500, quality: 100) {
+            fluid(maxWidth: 500, quality: 85) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }

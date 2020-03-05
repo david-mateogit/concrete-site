@@ -13,8 +13,7 @@
     # Multi-key header rules are expressed with multi-line strings.
     cache-control = '''
       max-age=31557600,
-      no-cache,
-      no-store,
+      public,
       must-revalidate'''
 
 [build.processing]

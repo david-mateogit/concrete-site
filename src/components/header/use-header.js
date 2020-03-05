@@ -7,7 +7,7 @@ const useHero = () => {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 130, quality: 100) {
+              fluid(maxWidth: 130, quality: 85) {
                 ...GatsbyImageSharpFluid_withWebp
               }
             }

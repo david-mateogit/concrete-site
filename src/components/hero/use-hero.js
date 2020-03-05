@@ -14,7 +14,7 @@ const useHero = () => {
           name
           publicURL
           childImageSharp {
-            fluid(maxWidth: 1080, quality: 100) {
+            fluid(maxWidth: 1080, quality: 90) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
