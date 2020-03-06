@@ -16,7 +16,7 @@ export const Section = styled.section`
   margin: 20% 0;
 `;
 
-export const CarouselBox = styled.div`
+export const CarouselBox = styled.figure`
   height: 50vh;
   width: 100vw;
   max-width: 960px;
@@ -28,7 +28,7 @@ export const CarouselBox = styled.div`
   z-index: 1;
 `;
 
-export const ServiceBanner = styled.div`
+export const ServiceBanner = styled.figcaption`
   color: white;
   font-size: 2rem;
   position: absolute;

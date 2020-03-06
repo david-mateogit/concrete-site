@@ -34,10 +34,11 @@ const About = () => {
         </TextBox>
         <Headings3>Trusted by HomeAdvisor</Headings3>
         <ImgBox>
-          {aboutImages.homeadvisor.nodes.map(image => (
+          {aboutImages.homeadvisor.nodes.map((image, index) => (
             <ImgStyled
               fluid={image.childImageSharp.fluid}
               alt="Home Advisor Badge"
+              key={index}
             />
           ))}
         </ImgBox>

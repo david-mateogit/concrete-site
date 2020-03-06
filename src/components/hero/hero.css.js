@@ -57,6 +57,11 @@ export const Article = styled.article`
   align-items: center;
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  width: 100%;
+
+  @media (orientation: landscape) {
+    min-height: 600px;
+  }
 
   > header {
     background: rgba(247, 247, 255, 0.9);
@@ -71,13 +76,17 @@ export const Article = styled.article`
 `;
 
 export const Section = styled.section`
-  padding: 2rem;
+  box-sizing: border-box;
   background-color: rgba(113, 82, 92, 0.9);
   color: #f7f7ff;
+  padding: 2rem;
+
+  margin: 45vh auto 0;
+  transform: translateY(-50%);
+
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30%;
   opacity: 0;
 
   animation: ${fadeSlideUp} 2s 1.5s ease-out forwards;
@@ -146,12 +155,16 @@ export const Heading2 = styled.h2`
 
 export const ArrowSection = styled.section`
   animation: ${pulse} 2s 3s ease-out infinite;
-  bottom: 4vh;
+  /* bottom: 4vh;
   left: 0;
   position: absolute;
-  right: 0;
+  right: 0; */
   text-align: center;
-  z-index: 10;
+
+  margin: 8vh auto 0;
+  transform: translateY(-50%);
+
+  z-index: 5;
 
   > svg {
     animation: ${fadeSlideUp} 2s 3s ease-out forwards;

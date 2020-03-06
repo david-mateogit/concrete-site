@@ -21,6 +21,7 @@ const Carousel = () => {
       alt="backgrounds"
       style={{
         marginBottom: "5rem",
+        minHeight: "600px",
       }}
     />
   );
@@ -30,6 +31,7 @@ const Hero = () => (
     <Div100vh
       style={{
         marginBottom: "4rem",
+        minHeight: "90rvh",
       }}
     >
       <Article>

@@ -15,7 +15,6 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   color: #71525c;
-  margin: 2rem 0;
 
   ${MEDIA.MIN_TABLET`
   text-align: center;
@@ -26,7 +25,7 @@ export const Section = styled.section`
 export const TextBox = styled.section`
   font-size: 1.2rem;
   line-height: 1.5;
-  padding: 1rem;
+  padding: 2rem;
   margin: 1rem 0;
 
   ${MEDIA.MIN_TABLET`
@@ -39,7 +38,7 @@ export const ImgBox = styled.div`
   width: 100vw;
   max-width: 500px;
   overflow: hidden;
-  padding: 0 1rem;
+  padding: 0 2rem;
 `;
 
 export const StyledImg = styled(Img)`
