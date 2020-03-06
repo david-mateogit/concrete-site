@@ -25,6 +25,7 @@ module.exports = {
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },
+    `gatsby-plugin-csp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
