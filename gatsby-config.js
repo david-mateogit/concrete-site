@@ -32,7 +32,7 @@ module.exports = {
         mergeStyleHashes: true, // you can disable styles sha256 hashes
         mergeDefaultDirectives: true,
         directives: {
-          "script-src": `'self' data: www.google-analytics.com`,
+          "script-src": `'self' 'unsafe-inline' data: www.google-analytics.com`,
           "style-src": `'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com`,
           "img-src": `'self' data: www.google-analytics.com`,
           "font-src": `'self' data: fonts.gstatic.com`,
