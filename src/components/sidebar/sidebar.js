@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { stack as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import { AnchorButton } from "./sidebar.css";
 

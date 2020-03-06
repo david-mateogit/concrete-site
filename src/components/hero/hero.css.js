@@ -161,7 +161,7 @@ export const ArrowSection = styled.section`
   right: 0; */
   text-align: center;
 
-  margin: 8vh auto 0;
+  margin: 6vh auto 0;
   transform: translateY(-50%);
 
   z-index: 5;

@@ -162,16 +162,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: rgba(113, 82, 92, 0.9);
   font-size: 1.15em;
-  height: 100%;
-  overflow: hidden !important;
-  ${MEDIA.MIN_TABLET`
   padding: 2.5em 1.5em 0;
-    `};
+
 }
 
-.bm-menu-wrap {
-  width: 250px !important;
-}
+
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
   fill: #373a47;
@@ -179,27 +174,30 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  padding: 2rem;
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  height: 100%;
+  padding: 1rem;
+  height: 500px !important;
+
 }
 
 /* Individual item */
 .bm-item {
   text-decoration: none;
   display: inline-block;
-  margin: 1rem;
   color: rgba(247, 247, 255, 1);
   box-sizing: border-box;
   text-align: left;
+
+  padding: 1rem 0;
   :hover,  :active {
-    border-bottom: 1px solid rgba(247, 247, 255, 1);
-    overflow: hidden;
-    margin-bottom: 5px;
+    text-decoration: underline;
+    text-decoration-color: rgba(247, 247, 255, 1);
+
     outline: 0;
+
+    > a {
+       text-decoration: underline;
+    text-decoration-color: rgba(247, 247, 255, 1);
+    }
   }
   :focus {
     outline: none;
