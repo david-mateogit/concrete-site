@@ -3,7 +3,7 @@ module.exports = {
     title: `RUTRA'S CONCRETE LLC`,
     description: `Rutra's Concrete, LLC. specializes in all types of concrete masonry construction. We are fully staffed, and able to handle any-size project.`,
     author: `David Mateo`,
-    siteUrl: `https://www.rutrasconcrete.com`,
+    siteUrl: `https://www.rutrasconcrete.netlify.com`,
     socialLinks: {
       instagram: `https://www.instagram.com/rutrasconcrete/`,
       email: `rutracardoso@hotmail.com`,
@@ -16,6 +16,15 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.rutrasconcrete.netlify.com",
+        sitemap: "https://www.rutrasconcrete.netlify.com/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

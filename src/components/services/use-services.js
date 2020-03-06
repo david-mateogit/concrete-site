@@ -10,7 +10,6 @@ const useServices = () => {
         }
       ) {
         nodes {
-          relativePath
           name
           childImageSharp {
             fluid(maxWidth: 500, quality: 85) {
