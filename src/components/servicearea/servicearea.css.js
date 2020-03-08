@@ -32,6 +32,17 @@ export const TextBox = styled.section`
    font-size: 1.4rem;
    padding: 2.5rem;
   `};
+
+  > ul {
+    margin-left: 1.5rem;
+    > li {
+      margin-bottom: 1rem;
+    }
+    > li > h4 {
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
 `;
 
 export const ImgBox = styled.div`

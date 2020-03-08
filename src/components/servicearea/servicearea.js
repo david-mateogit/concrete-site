@@ -20,23 +20,22 @@ const ServiceArea = () => {
         <TextBox>
           <p>
             At Rutra's Concrete, LLC, we service a vast area of three states.
-          </p>
-          <p>
             Our support includes the following towns and surrounding areas of:
           </p>
-
-          <p>
-            - Connecticut: Norwich, Preston, Hartfort, New London, Bridgeport,
-            Waterbury, New Haven, Danbury and beyond!.
-          </p>
-          <p>
-            - Rhode Island: Providence, Warwick, Cranston, Pawtucket,
-            Woonsocket, Bristol and more.
-          </p>
-          <p>
-            - Massachusetts: Boston, Worcester, Springfield, Lowell, Cambridge,
-            Brockton, Newton, Somerville and more.
-          </p>
+          <ul>
+            <li>
+              <h4>Connecticut:</h4> Norwich, Preston, Hartfort, New London,
+              Bridgeport, Waterbury, New Haven, Danbury and beyond!.
+            </li>
+            <li>
+              <h4>Rhode Island:</h4> Providence, Warwick, Cranston, Pawtucket,
+              Woonsocket, Bristol and more.
+            </li>
+            <li>
+              <h4>Massachusetts:</h4> Boston, Worcester, Springfield, Lowell,
+              Cambridge, Brockton, Newton, Somerville and more.
+            </li>
+          </ul>
         </TextBox>
         <ImgBox>
           <a
