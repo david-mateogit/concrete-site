@@ -18,14 +18,20 @@ const ServiceArea = () => {
       <Banner title="Service Area" />
       <Section>
         <TextBox>
-          At Rutra's Concrete, LLC, we service 50 miles surrounding the Norwich
-          area.
+          At Rutra's Concrete, LLC, we service a vast area that includes
+          Connecticut, Rhode Island and Massachusetts.
           <br />
           <br />
-          Our support includes the following towns and surrounding areas of
-          Connecticut: Norwich, Preston, Stonington, New London, Old Lyme,
-          Essex, Waterford, Bozrah, Ledgyard, Montville, Plainfield, Colchester,
-          Salem and beyond!
+          Our support includes the following towns and surrounding areas of:{" "}
+          <br />
+          <br />
+          - Connecticut: Norwich, Preston, Hartfort, New London, Bridgeport,
+          Waterbury, New Haven, Danbury and beyond!.
+          <br />
+          - Rhode Island: Providence, Warwick, Cranston, Pawtucket, Woonsocket,
+          Bristol and more.
+          <br />- Massachusetts: Boston, Worcester, Springfield, Lowell,
+          Cambridge, Brockton, Newton, Somerville and more.
         </TextBox>
         <ImgBox>
           <a

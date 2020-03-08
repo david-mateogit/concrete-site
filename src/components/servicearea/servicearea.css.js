@@ -17,7 +17,7 @@ export const Section = styled.section`
   color: #71525c;
 
   ${MEDIA.MIN_TABLET`
-  text-align: center;
+  text-align: left;
   max-width: 600px;
   `};
 `;
@@ -36,7 +36,7 @@ export const TextBox = styled.section`
 export const ImgBox = styled.div`
   box-sizing: border-box;
   width: 100vw;
-  max-width: 500px;
+  max-width: 550px;
   overflow: hidden;
   padding: 0 2rem;
 `;
