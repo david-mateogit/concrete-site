@@ -30,13 +30,14 @@ export const TextBox = styled.section`
 
   ${MEDIA.MIN_TABLET`
    font-size: 1.4rem;
+   padding: 2.5rem;
   `};
 `;
 
 export const ImgBox = styled.div`
   box-sizing: border-box;
   width: 100vw;
-  max-width: 550px;
+  max-width: 600px;
   overflow: hidden;
   padding: 0 2rem;
 `;
