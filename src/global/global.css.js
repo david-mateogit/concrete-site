@@ -191,7 +191,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   :hover,  :active {
     text-decoration: underline;
     text-decoration-color: rgba(247, 247, 255, 1);
-
     outline: 0;
 
     > a {
